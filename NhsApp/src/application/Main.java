@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
-	Button button;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
