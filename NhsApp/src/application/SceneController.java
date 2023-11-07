@@ -2,7 +2,6 @@ package application;
 
 import javafx.event.ActionEvent;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -12,6 +11,7 @@ import javafx.stage.Stage;
 public class SceneController {
 	private Stage stage;
 	private Scene scene;
+
 	
 	
 	public void switchToMain(ActionEvent event) throws IOException {
@@ -29,4 +29,5 @@ public class SceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
 }

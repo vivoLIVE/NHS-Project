@@ -1,6 +1,12 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-.root {
-    -fx-background-color: #FFFFFF; /* Set to While */
+
+/*https://www.color-hex.com/color-palette/106748 */
+.primary-color{
+	-fx-background-color: #e4e5f1;
+}
+
+.secondary-color{
+	-fx-background-color: #fafafa;
 }
 
 .button {
