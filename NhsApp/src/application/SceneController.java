@@ -2,15 +2,18 @@ package application;
 
 import javafx.event.ActionEvent;
 import java.io.IOException;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class SceneController {
 	private Stage stage;
 	private Scene scene;
+	private Pane pane;
 
 	
 	
@@ -30,4 +33,7 @@ public class SceneController {
 		stage.show();
 	}
 	
+	
+	
+    
 }

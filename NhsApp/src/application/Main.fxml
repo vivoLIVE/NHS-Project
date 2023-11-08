@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="primary-color" stylesheets="@lightMode.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
-   <children>
-      <Button layoutX="108.0" layoutY="268.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="391.0" stylesheets="@lightMode.css" text="Search" />
-      <Button layoutX="30.0" layoutY="51.0" mnemonicParsing="false" onAction="#switchToGPsSearchScene" stylesheets="@lightMode.css" text="switch" />
-      <Label layoutX="108.0" layoutY="205.0" text="From" />
-      <TextField layoutX="151.0" layoutY="201.0" />
-      <Label layoutX="312.0" layoutY="205.0" text="To" />
-      <TextField layoutX="343.0" layoutY="201.0" />
-      <MenuButton contentDisplay="GRAPHIC_ONLY" layoutX="499.0" layoutY="201.0" mnemonicParsing="false" text="MenuButton">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
-   </children>
-</AnchorPane>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="primary-color" stylesheets="@lightMode.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <top>
+      <Pane prefHeight="50.0" prefWidth="600.0" styleClass="secondary-color" stylesheets="@lightMode.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="280.0" layoutY="10.0" styleClass="header-label" stylesheets="@lightMode.css" text="NHS" />
+            <Button layoutX="21.0" layoutY="8.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Change" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="160.0" styleClass="secondary-color" stylesheets="@lightMode.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="161.0" styleClass="side-menu" stylesheets="@lightMode.css">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="30.0" prefWidth="51.0" styleClass="header-label" stylesheets="@lightMode.css" text="Filter" />
+                  <CheckBox mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="GP" />
+                  <CheckBox mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Dentist" />
+                  <CheckBox mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Opticians​" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="primary-color" stylesheets="@lightMode.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="67.0" layoutY="152.0" styleClass="header-label" stylesheets="@lightMode.css" text="From" />
+            <Label layoutX="237.0" layoutY="152.0" styleClass="header-label" stylesheets="@lightMode.css" text="To" />
+            <TextField layoutX="120.0" layoutY="154.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField layoutX="274.0" layoutY="154.0" prefHeight="25.0" prefWidth="100.0" />
+            <Button layoutX="68.0" layoutY="217.0" mnemonicParsing="false" onAction="#switchToGPsSearchScene" prefHeight="35.0" prefWidth="310.0" stylesheets="@lightMode.css" text="Next" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

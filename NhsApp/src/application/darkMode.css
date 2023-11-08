@@ -1,36 +1,53 @@
-/*https://www.color-hex.com/color-palette/1405 */
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
 .primary-color{
-	-fx-background-color: #353839;
+	-fx-background-color: #40444b;
 }
-
 .secondary-color{
-	-fx-background-color: #E7E7E7;
+	-fx-background-color: #2f3136;
 }
-
+.side-menu{
+	-fx-background-color: #292b2f;
+}
 .button {
     -fx-font-weight: bold;
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #1fc600;
     -fx-background-radius: 8;
     -fx-font-size: 16;
     -fx-text-fill: #FFFFFF;
     -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 3, 3);
 }
-
 .button:hover {
     -fx-font-weight: bold; 
-    -fx-background-color: #F40009;
+    -fx-background-color: #0eff00;
     -fx-background-radius: 8;
     -fx-font-size: 16;
     -fx-text-fill: #FFFFFF;
   
 }
-
 .button:pressed {
     -fx-font-weight: bold; 
-    -fx-background-color: #F40009;
+    -fx-background-color: #0eff00;
     -fx-background-radius: 8;
     -fx-font-size: 16;
     -fx-text-fill: #FFFFFF;
    
+}
+.label {
+    -fx-font-family: 'Fleftex';
+    -fx-font-size: 15;
+}
+.header-label{
+	-fx-font-family: 'Fleftex';
+    -fx-font-size: 20;
+}
+.text-field{
+	-fx-accent: #40444b;
+	-fx-background-color: #1fc600, white;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-background-radius: 0;
+}
+.text-field:focused {
+    -fx-background-color: #00d2ff, #40444b;
 }
 
