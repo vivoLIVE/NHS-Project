@@ -34,10 +34,8 @@
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" styleClass="primary-color" stylesheets="@lightMode.css" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="67.0" layoutY="152.0" styleClass="header-label" stylesheets="@lightMode.css" text="From" />
-            <Label layoutX="237.0" layoutY="152.0" styleClass="header-label" stylesheets="@lightMode.css" text="To" />
-            <TextField layoutX="120.0" layoutY="154.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField layoutX="274.0" layoutY="154.0" prefHeight="25.0" prefWidth="100.0" />
+            <Label layoutX="145.0" layoutY="117.0" prefHeight="30.0" prefWidth="180.0" styleClass="header-label" stylesheets="@lightMode.css" text="Type your postcode" />
+            <TextField layoutX="74.0" layoutY="154.0" prefHeight="25.0" prefWidth="302.0" />
             <Button layoutX="68.0" layoutY="217.0" mnemonicParsing="false" onAction="#switchToGPsSearchScene" prefHeight="35.0" prefWidth="310.0" stylesheets="@lightMode.css" text="Next" />
          </children>
       </Pane>

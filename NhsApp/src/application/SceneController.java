@@ -1,8 +1,10 @@
 package application;
 
+
 import javafx.event.ActionEvent;
 import java.io.IOException;
 
+import database.DatabaseManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -18,7 +20,32 @@ public class SceneController {
 	private Stage stage;
 	private Scene scene;
 	private Pane pane;
-
+	@FXML
+	private Label myResultLabel;
+	@FXML
+	private TextField myPostcode1;
+	@FXML
+	private Button btnResult;
+	
+	@FXML
+	public void search(ActionEvent event) {
+	    try {
+	        String input = myPostcode1.getText();
+	        // Call a method to check the database for the entered postcode
+	        DatabaseManager databaseManager = new DatabaseManager();  // Create an instance
+	        if (databaseManager.checkPostcode(input)) {
+	            myResultLabel.setText("Postcode found in the database");
+	        } else {
+	            myResultLabel.setText("Postcode not found in the database");
+	        }
+	    } catch (Exception e) {
+	        myResultLabel.setText("Error");
+	        e.printStackTrace();
+	    }
+	}
+	
+	
+	
 	
 	
 	public void switchToMain(ActionEvent event) throws IOException {
